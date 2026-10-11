@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DashStamp</title>
+<style>
+  :root {
+    --text: #1a1d24;
+    --muted: #5b6472;
+    --line: #e2e6ed;
+    --accent: #e8402a;
+    --surface: #f7f8fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e8ebf2;
+      --muted: #9aa3b2;
+      --line: #2f3440;
+      --accent: #ff6a55;
+      --surface: #1a1d24;
+    }
+    body { background: #12141a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 56px 20px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Roboto, sans-serif;
+    line-height: 1.75;
+    color: var(--text);
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 6px; }
+  p.lead { color: var(--muted); margin: 0 0 32px; }
+  a.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  a.card strong { color: var(--accent); }
+  a.card span { display: block; color: var(--muted); font-size: 0.92rem; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  code { background: var(--surface); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+<h1>DashStamp</h1>
+<p class="lead">
+  주행 영상에 촬영 시각과 위치를 직접 새겨 넣는 안드로이드 블랙박스 앱입니다.<br>
+  <em>An Android dashcam that burns the time and place into the picture itself.</em>
+</p>
+
+<a class="card" href="privacy-policy.html">
+  <strong>개인정보처리방침 / Privacy Policy →</strong>
+  <span>앱이 영상과 위치를 어떻게 다루는지 / How the app handles your footage and location</span>
+</a>
+
+<footer>
+  문의 / Contact: 6mvlab@gmail.com<br>
+  DashStamp — <code>com.dashstamp.app</code>
+</footer>
+</main>
+</body>
+</html>
