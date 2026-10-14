@@ -1,6 +1,6 @@
 # DashStamp 개인정보처리방침 / Privacy Policy
 
-**최종 수정일 / Last updated: 2026-10-11**
+**최종 수정일 / Last updated: 2026-10-14**
 
 DashStamp(이하 "앱")는 주행 영상을 촬영하고, 촬영 시각과 위치를 영상에 직접
 새겨 넣는 안드로이드 앱입니다.
@@ -176,6 +176,22 @@ ordinary driving never costs you an incident - but they are not unlimited.
 Once locked clips alone exceed twice your budget, the oldest of those go too:
 at that point the choice is between losing the oldest incident and recording
 nothing further at all.*
+
+### 끝나지 못한 녹화 / Recordings that did not finish
+
+직접 촬영한 영상은 앱 안에서 먼저 만들어진 뒤 갤러리로 옮겨집니다. 그 사이에
+앱이 꺼지거나 저장이 실패하면 영상은 앱 안에 남고, **다음 실행 때 갤러리로
+옮겨집니다.** 옮겨진 뒤에야 앱 안의 사본이 지워집니다.
+
+예전에는 이것을 **지웠습니다.** 블랙박스에서는 녹화를 끝내지 못하게 만든 사건이
+바로 찍고 싶었던 장면이므로, 버리지 않고 복구하도록 바꾸었습니다.
+
+*A manual recording is made inside the app and then moved to your gallery. If
+the app stops in between, or the move fails, the recording stays in the app and
+is moved to the gallery on the next launch - the copy inside the app is removed
+only once the gallery has it. These used to be deleted instead. On a dashcam
+the recording that could not be finished is often the one worth having, so it
+is recovered rather than thrown away.*
 
 ### 삭제 / Deleting
 
