@@ -1,6 +1,6 @@
 # DashStamp 개인정보처리방침 / Privacy Policy
 
-**최종 수정일 / Last updated: 2026-10-19**
+**최종 수정일 / Last updated: 2026-10-22**
 
 DashStamp(이하 "앱")는 주행 영상을 촬영하고, 촬영 시각과 위치를 영상에 직접
 새겨 넣는 안드로이드 앱입니다.
@@ -242,6 +242,21 @@ AdMob 대시보드의 합계(노출 수, 수익)뿐이고, 거기에 개인을 �
 - 광고 개인설정: https://adssettings.google.com
 
 **영상과 위치는 광고와 무관합니다.** 광고 SDK에 전달되지 않습니다.
+
+### 유럽에서 쓰실 때 / If you are in Europe
+
+유럽경제지역(EEA)과 영국에서는 **개인맞춤 광고에 동의를 받아야 합니다.** 앱을
+처음 켜실 때 구글의 동의 양식이 뜨고, **답하시기 전까지는 광고를 요청하지
+않습니다.**
+
+그 외 지역에서는 양식이 뜨지 않습니다. 동의가 필요 없다고 구글이 판단하기
+때문이며, 한국·일본에서는 보이지 않습니다.
+
+*In the European Economic Area and the United Kingdom, consent is required for
+personalised advertising. Google's consent form appears when you first open the
+app, and no advertisement is requested until you have answered it. Elsewhere the
+form does not appear, because Google reports that consent is not required
+there - so it is not seen in Korea or Japan.*
 
 *The advertisements come from Google AdMob. Fetching one means talking to
 Google's servers, and in doing so Google receives the device's advertising ID,
