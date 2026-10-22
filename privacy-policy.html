@@ -64,7 +64,7 @@
 <body>
 <main>
 <h1>DashStamp 개인정보처리방침 / Privacy Policy</h1>
-<p><strong>최종 수정일 / Last updated: 2026-10-14</strong></p>
+<p><strong>최종 수정일 / Last updated: 2026-10-19</strong></p>
 <p>DashStamp(이하 &quot;앱&quot;)는 주행 영상을 촬영하고, 촬영 시각과 위치를 영상에 직접 새겨 넣는 안드로이드 앱입니다. 이 문서는 앱이 회원님의 영상과 위치 정보를 어떻게 다루는지 설명합니다.</p>
 <p class="en"><em>DashStamp (&quot;the app&quot;) records driving footage and burns the time and place it was taken into the picture itself. This document explains how it handles your footage and your location.</em></p>
 <h2 id="요약--summary">요약 / Summary</h2>
@@ -75,9 +75,9 @@
 <li>위치를 <strong>알아내는</strong> 일은 안드로이드가 하며, 위성이 잡히기 전에는 안드로이드가 네트워크를 쓸 수 있습니다 (<a href="#1-2-안드로이드-위치-서비스에-대해--about-androids-location-service">1-2</a>).</li>
 </ol>
 <p><strong>위치 표시를 끄시면 둘 다 일어나지 않습니다.</strong></p>
-<p>앱은 <strong>유료이며 광고가 없습니다.</strong> 광고 SDK도, 분석 SDK도 들어 있지 않습니다.</p>
+<p>앱은 <strong>무료이며 광고가 있습니다.</strong> 직접 촬영한 영상을 저장한 뒤에 전면 광고가 한 번 나옵니다. <strong>한 번 결제하면 광고가 사라집니다</strong>(3항).</p>
 <p class="en"><em><strong>Your footage never leaves this device.</strong> Everything happens on the phone, the app has no server, and no recording is uploaded, transmitted, or seen by the developer.</em></p>
-<p class="en"><em><strong>Two things are worth naming about location.</strong> First, setting the stamp to show an address sends your coordinates to the Android system geocoder to be turned into one (1-1); on the default coordinates setting that never happens. Second, working out the position is Android&#x27;s job, and before the satellites lock on Android may use the network to do it (1-2). Turn the location stamp off and neither happens. The app is paid and carries no advertising: there is no ad SDK and no analytics SDK in it.</em></p>
+<p class="en"><em><strong>Two things are worth naming about location.</strong> First, setting the stamp to show an address sends your coordinates to the Android system geocoder to be turned into one (1-1); on the default coordinates setting that never happens. Second, working out the position is Android&#x27;s job, and before the satellites lock on Android may use the network to do it (1-2). Turn the location stamp off and neither happens. The app is free and shows an advertisement after a manual recording is saved; one payment removes them for good &mdash; see section 3.</em></p>
 <h2 id="1-위치-정보--location">1. 위치 정보 / Location</h2>
 <p>이 앱에서 위치는 <strong>영상에 찍어 넣기 위한 것</strong>입니다.</p>
 <p><strong>설정에서 위치 표시를 끄실 수 있습니다.</strong> 끄면 앱은 위치 권한을 <strong>요청하지도 않고</strong>, 위치를 받지도 않습니다. 영상에는 시간만 찍힙니다.</p>
@@ -131,7 +131,37 @@
 <h3 id="삭제--deleting">삭제 / Deleting</h3>
 <p>앱을 삭제하면 <strong>앱 내부에 있던 블랙박스 영상도 함께 삭제됩니다.</strong> 갤러리로 내보내신 영상은 남습니다.</p>
 <p class="en"><em>Uninstalling removes the blackbox clips held inside the app. Anything you exported to the gallery stays.</em></p>
-<h2 id="3-권한--permissions">3. 권한 / Permissions</h2>
+<h2 id="3-광고와-구매--ads-and-the-purchase">3. 광고와 구매 / Ads and the purchase</h2>
+<h3 id="광고가-나오는-때--when-an-ad-appears">광고가 나오는 때 / When an ad appears</h3>
+<p><strong>직접 촬영한 영상이 갤러리에 저장된 뒤</strong>에 전면 광고가 한 번 나옵니다. 저장이 끝난 다음입니다 &mdash; 광고가 녹화와 저장 사이에 끼는 일은 없습니다.</p>
+<p><strong>블랙박스 구간에는 광고가 나오지 않습니다.</strong> 주차 중 충격 영상도 마찬가지입니다. 블랙박스는 1~10분마다 자동으로 구간을 저장하는데, 주행 중에 몇 분마다 전면 광고가 도로 화면을 덮는 것은 수익이 아니라 <strong>위험</strong>이기 때문입니다. 운전자가 안전하게 닫을 수도 없습니다.</p>
+<p class="en"><em>An advertisement appears once, after a manually recorded clip has been saved to your gallery &mdash; after the saving, never between the recording and it. Blackbox clips never show one, and neither do parked impact clips: a blackbox closes a segment every few minutes while the car is moving, and a full-screen advertisement over the road on that schedule is a hazard rather than a business model. The driver could not safely dismiss it either.</em></p>
+<h3 id="광고가-수집하는-것--what-the-advertising-collects">광고가 수집하는 것 / What the advertising collects</h3>
+<p>광고는 <strong>구글의 AdMob</strong>이 제공합니다. 광고를 받아오려면 구글 서버와 통신해야 하고, 그 과정에서 구글은 다음을 받습니다.</p>
+<ul>
+<li><strong>광고 ID</strong> (기기의 광고 식별자)</li>
+<li>기기 정보와 IP 주소</li>
+<li>광고를 보았는지, 눌렀는지</li>
+</ul>
+<p><strong>이 정보는 구글이 받는 것이며, 개발자는 받지 않습니다.</strong> 개발자가 보는 것은 AdMob 대시보드의 합계(노출 수, 수익)뿐이고, 거기에 개인을 식별할 수 있는 것은 없습니다.</p>
+<p>구글이 이 정보를 어떻게 다루는지는 <strong>구글의 개인정보처리방침</strong>을 따릅니다.</p>
+<ul>
+<li>구글 개인정보처리방침: https://policies.google.com/privacy</li>
+<li>광고 개인설정: https://adssettings.google.com</li>
+</ul>
+<p><strong>영상과 위치는 광고와 무관합니다.</strong> 광고 SDK에 전달되지 않습니다.</p>
+<p class="en"><em>The advertisements come from Google AdMob. Fetching one means talking to Google&#x27;s servers, and in doing so Google receives the device&#x27;s advertising ID, device information, your IP address, and whether the advertisement was seen or tapped. Google receives it; the developer does not. What the developer sees is the totals on the AdMob dashboard &mdash; impressions and revenue &mdash; with nothing in them that identifies anybody. Google&#x27;s own privacy policy governs what happens to it. Your footage and your location are no part of this and are never handed to the advertising SDK.</em></p>
+<h3 id="광고-제거-구매--removing-the-ads">광고 제거 구매 / Removing the ads</h3>
+<p>설정 화면에서 <strong>한 번 결제하면 광고가 사라집니다.</strong> 구독이 아니라 1회 구매입니다.</p>
+<ul>
+<li>결제는 <strong>구글 플레이</strong>가 처리합니다. 앱은 카드 번호를 보지도, 다루지도 않습니다</li>
+<li>앱이 아는 것은 <strong>&quot;이 구글 계정이 이 상품을 샀는가&quot;</strong> 라는 예/아니오뿐입니다</li>
+<li>그 답은 기기 안에 저장해 두고, 앱을 열 때마다 구글 플레이에 다시 확인합니다. 비행기 모드에서도 구매자가 광고를 보지 않게 하기 위해서입니다</li>
+<li>기기를 바꾸시면 <strong>설정 → 구매 복원</strong>으로 되살릴 수 있습니다. 구매하신 구글 계정으로 로그인되어 있어야 합니다</li>
+</ul>
+<p><strong>구매하시면 광고를 요청하지 않습니다.</strong> 띄우지 않는 정도가 아니라 광고를 받아오는 통신 자체가 일어나지 않습니다. 다만 광고 SDK는 여전히 앱에 포함되어 있고 앱이 켜질 때 초기화됩니다.</p>
+<p class="en"><em>One payment in the settings screen removes the advertisements for good &mdash; a purchase, not a subscription. Google Play handles the payment; the app never sees or handles a card. All the app learns is a yes or no: whether this Google account owns the product. That answer is kept on the device and checked with Google Play again on each launch, so a purchaser in a tunnel is not shown advertisements while the question is still being asked. Changing phones is covered by Restore purchase in the settings, signed in with the Google account that bought it. Once bought, no advertisement is requested at all &mdash; not merely not displayed &mdash; though the advertising SDK remains inside the app and still starts up with it.</em></p>
+<h2 id="4-권한--permissions">4. 권한 / Permissions</h2>
 <table><thead><tr><th>권한 / Permission</th><th>이유 / Why</th></tr></thead><tbody>
 <tr><td>카메라 / Camera</td><td>영상을 촬영하기 위해 / To record</td></tr>
 <tr><td>마이크 / Microphone</td><td>소리를 함께 녹음하기 위해. 설정에서 끌 수 있습니다 / For sound; can be turned off in settings</td></tr>
@@ -139,36 +169,36 @@
 <tr><td>동영상 저장·접근 / Video storage</td><td>결과를 저장하기 위해 / To save what it records</td></tr>
 <tr><td>알림 / Notifications</td><td>백그라운드 녹화 중임을 알리기 위해 / To say that it is recording in the background</td></tr>
 <tr><td>동작 감지 / Motion sensing</td><td>충격 감지와 주차 판단을 위해. 권한이 필요 없는 센서이며 기기를 벗어나지 않습니다 / For impact detection and deciding the car has stopped; needs no permission and never leaves the device</td></tr>
-<tr><td>인터넷 / Internet</td><td>주소 표시를 켜셨을 때의 주소 조회에만 씁니다. 좌표 표시에서는 앱이 아무것도 보내지 않습니다 / Used only for the address lookup when the address stamp is on; on the coordinates stamp the app sends nothing</td></tr>
+<tr><td>인터넷 / Internet</td><td>광고를 받아오기 위해, 그리고 주소 표시를 켜셨을 때의 주소 조회를 위해 / To fetch advertisements, and for the address lookup when the address stamp is on</td></tr>
 <tr><td>백그라운드 실행 / Foreground service</td><td>블랙박스 녹화가 화면을 벗어나도 이어지게 하기 위해. 녹화 중에는 알림이 계속 표시됩니다 / So blackbox recording survives leaving the screen; a notification shows throughout</td></tr>
 </tbody></table>
 <p><code>다른 앱 위에 표시</code>, <code>진동</code>, <code>사진 접근</code> 권한은 <strong>요청하지 않습니다.</strong> 안드로이드 빌드 도구가 기본으로 넣는 것들까지 빌드 설정에서 <strong>제거했습니다.</strong></p>
 <p>앱은 <strong>회원님의 기존 사진이나 영상을 읽지 않습니다.</strong> 갤러리에 대해서는 자신이 만든 <code>DashStamp</code> 앨범에 쓰는 것이 전부이며, 목록을 훑어보는 코드는 없습니다. 연락처와 통화 기록은 요청하지도, 접근하지도 않습니다.</p>
 <p><strong>안드로이드 12 이하에서는</strong> 권한 창이 &quot;사진, 미디어, 파일에 접근&quot;이라고 넓게 표시됩니다. 당시 안드로이드에는 영상만 허용하는 권한이 없었기 때문이며, 앱이 실제로 하는 일은 위와 같습니다. 안드로이드 13 이상에서는 영상 권한만 요청하고 사진 권한은 <strong>차단해 두었습니다.</strong></p>
 <p class="en"><em>Draw-over-other-apps, vibration and photo access are not requested: the ones Android&#x27;s build tooling adds by default have been stripped out in the build configuration. The app does not read your existing photos or videos. All it does with the gallery is write into the <code>DashStamp</code> album it made; there is no code in it that lists your media. Contacts and the call log are neither requested nor touched. On Android 12 and below the permission dialog says &quot;photos, media and files&quot; because that version of Android had no video-only permission &mdash; what the app actually does is the above. On Android 13 and up it asks only for video, and the photo permission is blocked outright.</em></p>
-<h2 id="4-백그라운드-녹화--recording-in-the-background">4. 백그라운드 녹화 / Recording in the background</h2>
+<h2 id="5-백그라운드-녹화--recording-in-the-background">5. 백그라운드 녹화 / Recording in the background</h2>
 <p>블랙박스 모드는 앱이 화면에서 사라져도 녹화를 계속합니다. 이때 안드로이드 알림이 하나 표시되며, <strong>이 알림은 녹화가 끝날 때까지 지워지지 않습니다.</strong></p>
 <p>의도된 동작입니다. <strong>아무 표시 없이 도로를 녹화하는 앱이어서는 안 됩니다.</strong></p>
 <p class="en"><em>Blackbox mode carries on recording once the app leaves the screen, and shows a notification that cannot be dismissed until it stops. That is deliberate: nothing should be recording the road without saying so.</em></p>
-<h2 id="5-주차-모드--parking-mode">5. 주차 모드 / Parking mode</h2>
+<h2 id="6-주차-모드--parking-mode">6. 주차 모드 / Parking mode</h2>
 <p>켜시면, 차가 5분간 움직이지 않을 때 녹화를 멈추고 <strong>가속도계로 충격만 감시합니다.</strong> 충격이 감지되면 짧은 영상 한 편을 녹화하고 잠급니다.</p>
 <p>이 동안 앱은 깨어 있으므로 <strong>배터리를 씁니다.</strong> 전원이 공급되는 거치대를 권합니다.</p>
 <p class="en"><em>With parking mode on, the app stops recording after five minutes without movement and watches the accelerometer instead. A jolt records one short clip and locks it. The app stays awake throughout, which costs battery &mdash; a powered mount is worth having.</em></p>
-<h2 id="6-수집하지-않는-것--what-is-not-collected">6. 수집하지 않는 것 / What is not collected</h2>
+<h2 id="7-수집하지-않는-것--what-is-not-collected">7. 수집하지 않는 것 / What is not collected</h2>
 <ul>
 <li>계정이 없습니다. 가입도 로그인도 없습니다</li>
-<li>광고 식별자를 읽지 않습니다</li>
-<li>사용 기록·분석 데이터를 수집하지 않습니다</li>
-<li>영상을 네트워크로 보내지 않습니다</li>
-<li><strong>앱이 직접 네트워크를 쓰는 곳은 한 군데뿐입니다</strong> &mdash; 주소 표시를 켜셨을 때의 주소 조회입니다. 조회가 안 되면 좌표가 찍히고, 이미 받아둔 주소가 있으면 그 주소에 <strong>측정 시각이 함께</strong> 찍힙니다</li>
+<li><strong>영상과 음성은 네트워크로 보내지 않습니다.</strong> 어떤 경우에도 기기 안에만 있습니다</li>
+<li>개발자는 <strong>사용 기록이나 분석 데이터를 수집하지 않습니다.</strong> 분석 SDK가 들어 있지 않습니다</li>
+<li>개발자가 받는 개인정보가 <strong>하나도 없습니다</strong></li>
+<li><strong>앱이 네트워크를 쓰는 곳은 두 군데입니다</strong> &mdash; 광고를 받아오는 것(3항)과, 주소 표시를 켜셨을 때의 주소 조회입니다. 광고를 제거하시면 전자는 사라집니다. 주소 조회는: 조회가 안 되면 좌표가 찍히고, 이미 받아둔 주소가 있으면 그 주소에 <strong>측정 시각이 함께</strong> 찍힙니다</li>
 <li>그 밖에 위치를 <strong>알아내는</strong> 과정에서 안드로이드가 네트워크를 쓸 수 있습니다. 앱이 하는 일이 아니고 모든 위치 앱에 공통입니다 (<a href="#1-2-안드로이드-위치-서비스에-대해--about-androids-location-service">1-2</a>)</li>
-<li>비행기 모드에서도 녹화와 스탬프는 동작합니다. 위성만으로 위치를 잡게 되므로 처음 잡히기까지 더 오래 걸립니다</li>
+<li>비행기 모드에서도 녹화와 스탬프는 동작합니다. 위성만으로 위치를 잡게 되므로 처음 잡히기까지 더 오래 걸리고, 광고는 받아올 수 없으니 나오지 않습니다</li>
 </ul>
-<p class="en"><em>There is no account, no advertising identifier, and no analytics, and no footage is ever sent anywhere. The app makes exactly one network request of its own, and only on the address stamp: the address lookup. When it cannot be made the frame carries coordinates, or an address already found together with the time it was found. Separately, Android may use the network while working out the position itself &mdash; not the app&#x27;s doing, and common to every app that uses location. Recording and stamping both work in aeroplane mode; the first fix simply takes longer with satellites alone.</em></p>
-<h2 id="7-아동의-개인정보--childrens-privacy">7. 아동의 개인정보 / Children&#x27;s privacy</h2>
+<p class="en"><em>There is no account, the developer collects no usage or analytics data and there is no analytics SDK in the app, and no footage or audio is ever sent anywhere &mdash; it stays on the device in every case. The developer receives no personal information at all. The app makes network requests in two places: fetching an advertisement (section 3), which stops once the ads are bought away, and the address lookup on the address stamp. When it cannot be made the frame carries coordinates, or an address already found together with the time it was found. Separately, Android may use the network while working out the position itself &mdash; not the app&#x27;s doing, and common to every app that uses location. Recording and stamping both work in aeroplane mode; the first fix simply takes longer with satellites alone.</em></p>
+<h2 id="8-아동의-개인정보--childrens-privacy">8. 아동의 개인정보 / Children&#x27;s privacy</h2>
 <p>앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동으로부터 고의로 정보를 수집하지 않습니다.</p>
 <p class="en"><em>The app is not directed at children under 13, and does not knowingly collect information from them.</em></p>
-<h2 id="8-영상을-공유하실-때--if-you-share-your-footage">8. 영상을 공유하실 때 / If you share your footage</h2>
+<h2 id="9-영상을-공유하실-때--if-you-share-your-footage">9. 영상을 공유하실 때 / If you share your footage</h2>
 <p>위치 표시를 켜두셨다면 영상에는 <strong>촬영 시각과 좌표가 찍혀 있습니다.</strong> 그것이 이 앱의 목적입니다.</p>
 <p>다만 그 영상을 다른 곳에 올리시면 <strong>그 시각에 어디 계셨는지도 함께 공개</strong>됩니다. 집 앞이나 직장 앞에서 찍힌 영상이라면 한 번 더 생각해 보시기 바랍니다.</p>
 <p>*With the location stamp on, your footage carries the time and the coordinates</p>
@@ -176,7 +206,7 @@
 <ul>
 <li>that is the point of the app. But posting it anywhere also publishes where you were at that moment.</li>
 </ul>
-<h2 id="9-보유-기간과-파기--how-long-things-are-kept">9. 보유 기간과 파기 / How long things are kept</h2>
+<h2 id="10-보유-기간과-파기--how-long-things-are-kept">10. 보유 기간과 파기 / How long things are kept</h2>
 <p>개발자가 보관하는 것이 <strong>없습니다.</strong> 서버가 없으므로 보관할 곳도 없습니다. 아래는 <strong>회원님의 기기 안에서</strong> 영상이 얼마나 남는지입니다.</p>
 <table><thead><tr><th>대상</th><th>보유 기간</th></tr></thead><tbody>
 <tr><td>직접 촬영한 영상 / Manual recordings</td><td>회원님이 지우실 때까지 (갤러리)</td></tr>
@@ -184,12 +214,25 @@
 <tr><td>잠근·충격 영상 / Locked clips</td><td>설정 용량의 두 배까지 보관 후 오래된 것부터 삭제</td></tr>
 <tr><td>위치 좌표 / Coordinates</td><td><strong>별도 보관 없음.</strong> 영상 안의 글자로만 존재</td></tr>
 <tr><td>주소 조회 기록 / Address lookups</td><td><strong>별도 보관 없음.</strong> 앱은 결과를 저장하지 않음</td></tr>
+<tr><td>광고 제거 구매 여부 / Whether the ads were bought</td><td>기기 안에 예/아니오 한 값. 앱을 삭제하면 사라지며, 재설치 후 <strong>구매 복원</strong>으로 되살림</td></tr>
 </tbody></table>
 <p><strong>앱을 삭제하면</strong> 앱 내부의 블랙박스 영상과 설정이 <strong>함께 삭제됩니다.</strong> 갤러리로 내보내신 영상은 회원님 것이므로 남습니다.</p>
 <p class="en"><em>The developer keeps nothing: there is no server to keep it on. The table above is how long footage lives on your own phone. Uninstalling removes the blackbox clips and the settings held inside the app; anything exported to your gallery is yours and stays.</em></p>
-<h2 id="10-제3자-제공과-국외-이전--third-parties-and-transfers-abroad">10. 제3자 제공과 국외 이전 / Third parties and transfers abroad</h2>
+<h2 id="11-제3자-제공과-국외-이전--third-parties-and-transfers-abroad">11. 제3자 제공과 국외 이전 / Third parties and transfers abroad</h2>
 <p>개발자는 회원님의 정보를 <strong>누구에게도 제공하지 않습니다.</strong> 받는 것이 없으므로 제공할 것도 없습니다.</p>
-<p>다만 <strong>회원님이 주소 표시를 켜셨을 때</strong>, 앱은 좌표를 안드로이드 시스템 지오코더에 넘깁니다. 대부분의 기기에서 이 서비스는 <strong>구글이 운영</strong>하며, 서버는 <strong>국외에 있을 수 있습니다.</strong></p>
+<p>다만 앱이 정보를 <strong>구글에 넘기는 경로가 둘</strong> 있습니다.</p>
+<h3 id="1-광고--advertising">(1) 광고 / Advertising</h3>
+<table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>받는 곳 / Recipient</td><td>Google AdMob</td></tr>
+<tr><td>넘기는 것 / What is sent</td><td>광고 ID, 기기 정보, IP 주소, 노출·클릭 여부</td></tr>
+<tr><td>목적 / Purpose</td><td>광고 게재와 측정</td></tr>
+<tr><td>시점 / When</td><td>광고를 받아올 때 (광고 제거를 구매하시면 없음)</td></tr>
+<tr><td>국외 이전 / Abroad</td><td><strong>있을 수 있습니다.</strong> 구글 서버는 국외에 있을 수 있습니다</td></tr>
+<tr><td>거부 방법 / How to decline</td><td><strong>광고 제거를 구매</strong>하시거나, 기기 설정에서 광고 ID를 삭제·재설정하실 수 있습니다</td></tr>
+</tbody></table>
+<p>영상과 위치는 광고 SDK에 전달되지 않습니다.</p>
+<h3 id="2-주소-조회--the-address-lookup">(2) 주소 조회 / The address lookup</h3>
+<p><strong>회원님이 주소 표시를 켜셨을 때</strong>, 앱은 좌표를 안드로이드 시스템 지오코더에 넘깁니다. 대부분의 기기에서 이 서비스는 <strong>구글이 운영</strong>하며, 서버는 <strong>국외에 있을 수 있습니다.</strong></p>
 <table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
 <tr><td>받는 곳 / Recipient</td><td>안드로이드 시스템 지오코더 (대부분의 기기에서 Google)</td></tr>
 <tr><td>넘기는 것 / What is sent</td><td>좌표(위도·경도)뿐. 영상·음성·식별자는 보내지 않음</td></tr>
@@ -200,33 +243,35 @@
 </tbody></table>
 <p><strong>기본 설정에서는 이 이전이 일어나지 않습니다.</strong></p>
 <p>이와 별도로, 위치를 알아내는 과정에서 안드로이드 자체가 네트워크를 쓸 수 있습니다(<a href="#1-2-안드로이드-위치-서비스에-대해--about-androids-location-service">1-2</a>). 이는 앱이 아니라 운영체제가 하는 일이며 기기 설정에서 끄실 수 있습니다.</p>
-<p class="en"><em>The developer gives your information to nobody, having none to give. But with the address stamp on, the app hands your coordinates to the Android system geocoder &mdash; on most phones a Google-run service whose servers may sit outside your country. What goes is latitude and longitude alone: no footage, no audio, no identifier. Google&#x27;s own policy governs what happens to it; the developer neither receives nor stores it. Leave the stamp on coordinates, the default, or turn the location stamp off, and the transfer never happens. Separately, Android itself may use the network to work out the position (1-2) &mdash; the operating system&#x27;s doing, not the app&#x27;s, and switchable in your phone&#x27;s settings.</em></p>
-<h2 id="11-회원님의-권리--your-rights">11. 회원님의 권리 / Your rights</h2>
+<p class="en"><em>The developer gives your information to nobody, having none to give. Two paths do hand information to Google. The first is advertising: fetching one sends the advertising ID, device information, your IP address and whether the advertisement was seen or tapped, for serving and measuring it &mdash; and buying the ads away ends it. Your footage and location are no part of it. You can also clear or reset the advertising ID in your phone&#x27;s settings. The second is the address lookup: with the address stamp on, the app hands your coordinates to the Android system geocoder &mdash; on most phones a Google-run service whose servers may sit outside your country. What goes is latitude and longitude alone: no footage, no audio, no identifier. Google&#x27;s own policy governs what happens to it; the developer neither receives nor stores it. Leave the stamp on coordinates, the default, or turn the location stamp off, and the transfer never happens. Separately, Android itself may use the network to work out the position (1-2) &mdash; the operating system&#x27;s doing, not the app&#x27;s, and switchable in your phone&#x27;s settings.</em></p>
+<h2 id="12-회원님의-권리--your-rights">12. 회원님의 권리 / Your rights</h2>
 <p>서버도 계정도 없으므로, 회원님의 정보는 <strong>전부 회원님 기기 안에 있고 회원님이 직접 처리하실 수 있습니다.</strong> 개발자에게 요청하실 필요가 없습니다.</p>
 <table><thead><tr><th>하고 싶은 일</th><th>방법</th></tr></thead><tbody>
 <tr><td>위치 수집 중단</td><td>설정 → <strong>위치 표시 끄기</strong> (권한 요청조차 하지 않습니다)</td></tr>
 <tr><td>국외 이전 중단</td><td>설정 → 표시 방식을 <strong>좌표</strong>로 (기본값)</td></tr>
 <tr><td>녹음 중단</td><td>설정 → <strong>소리 끄기</strong></td></tr>
+<tr><td>광고 중단</td><td>설정 → <strong>광고 제거</strong> 구매</td></tr>
+<tr><td>광고 ID 초기화</td><td>안드로이드 설정 → 개인정보 보호 → 광고</td></tr>
 <tr><td>영상 삭제</td><td>앱의 영상 목록에서 개별 삭제, 또는 갤러리에서 삭제</td></tr>
 <tr><td>전부 삭제</td><td><strong>앱 삭제</strong> &mdash; 앱 내부 영상과 설정이 함께 사라집니다</td></tr>
 <tr><td>권한 회수</td><td>안드로이드 설정 → 앱 → DashStamp → 권한</td></tr>
 </tbody></table>
 <p>열람·정정·삭제·처리정지 요청을 개발자에게 보내실 수도 있으나, 개발자가 보관하는 회원님의 정보가 없어 <strong>삭제할 대상이 존재하지 않습니다.</strong> 문의는 아래 이메일로 받습니다.</p>
 <p class="en"><em>There is no server and no account, so everything is on your phone and in your hands &mdash; you do not need to ask the developer. The table above is how. You may still write to the address below to ask for access, correction, deletion or a halt to processing; the honest answer will be that the developer holds nothing of yours to act on.</em></p>
-<h2 id="12-안전성-확보-조치--keeping-it-safe">12. 안전성 확보 조치 / Keeping it safe</h2>
+<h2 id="13-안전성-확보-조치--keeping-it-safe">13. 안전성 확보 조치 / Keeping it safe</h2>
 <ul>
 <li>영상은 <strong>기기를 벗어나지 않습니다.</strong> 전송 중 유출될 경로가 없습니다</li>
 <li>블랙박스 영상은 <strong>앱 전용 저장공간</strong>에 있어 다른 앱이 읽을 수 없습니다</li>
 <li>계정도 비밀번호도 없으므로 <strong>탈취될 자격 증명이 없습니다</strong></li>
 <li>주소 조회는 안드로이드 플랫폼을 통해 <strong>암호화된 연결</strong>로 이루어집니다</li>
-<li>광고·분석 SDK가 <strong>하나도 들어 있지 않습니다</strong></li>
+<li><strong>분석 SDK가 들어 있지 않습니다.</strong> 광고 SDK는 구글의 것이며, 개발자가 회원님의 정보를 받는 통로는 아닙니다</li>
 </ul>
 <p>가장 확실한 보호는 <strong>보관하지 않는 것</strong>이고, 이 앱의 구조가 그렇습니다.</p>
-<p class="en"><em>Footage never leaves the device, so there is no transfer to intercept. Blackbox clips live in app-private storage that other apps cannot read. There are no accounts and no passwords, so there are no credentials to steal. The address lookup goes over the platform&#x27;s encrypted connection. There is not one advertising or analytics SDK in the app. The strongest protection is not holding the data, and that is how this app is built.</em></p>
-<h2 id="13-방침-변경--changes-to-this-policy">13. 방침 변경 / Changes to this policy</h2>
+<p class="en"><em>Footage never leaves the device, so there is no transfer to intercept. Blackbox clips live in app-private storage that other apps cannot read. There are no accounts and no passwords, so there are no credentials to steal. The address lookup goes over the platform&#x27;s encrypted connection. There is no analytics SDK in the app, and the advertising SDK is Google&#x27;s own &mdash; not a channel through which the developer receives anything about you. The strongest protection is not holding the data, and that is how this app is built.</em></p>
+<h2 id="14-방침-변경--changes-to-this-policy">14. 방침 변경 / Changes to this policy</h2>
 <p>이 방침이 변경되면 앱 업데이트와 함께 이 페이지가 갱신됩니다.</p>
 <p class="en"><em>This page is updated alongside app releases.</em></p>
-<h2 id="14-문의--contact">14. 문의 / Contact</h2>
+<h2 id="15-문의--contact">15. 문의 / Contact</h2>
 <p>개인정보 처리에 관한 문의와 요청을 받는 곳입니다.</p>
 <table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td>앱 / App</td><td>DashStamp (<code>com.dashstamp.app</code>)</td></tr>
