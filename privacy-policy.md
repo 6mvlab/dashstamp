@@ -1,6 +1,6 @@
 # DashStamp 개인정보처리방침 / Privacy Policy
 
-**최종 수정일 / Last updated: 2026-10-27**
+**최종 수정일 / Last updated: 2026-10-29**
 
 DashStamp(이하 "앱")는 주행 영상을 촬영하고, 촬영 시각과 위치를 영상에 직접
 새겨 넣는 안드로이드 앱입니다.
@@ -151,6 +151,7 @@ Android nothing.*
 |---|---|
 | 직접 촬영 / Manual | 갤러리의 `DashStamp` 앨범 / The `DashStamp` album in your gallery |
 | 블랙박스 / Blackbox | 앱 내부 저장공간 / The app's own storage |
+| 충격으로 잠긴 블랙박스 영상 / Impact-locked blackbox clips | 앱 내부, 그리고 설정이 켜져 있으면 갤러리의 `DashStamp` 앨범에도 / The app's own storage, and also the `DashStamp` album if the setting is on |
 
 블랙박스 영상이 갤러리로 가지 않는 이유는, 한 번 주행하면 짧은 영상이 수십 개
 생겨 갤러리가 묻히기 때문입니다. 앱 안의 목록에서 보시고, 남기고 싶은 것만
@@ -159,6 +160,20 @@ Android nothing.*
 *Blackbox clips stay out of the gallery because one drive produces dozens of
 them and would bury everything else in there. They live in the app's own list,
 and you export the ones worth keeping.*
+
+**충격 영상 갤러리 저장** 설정(기본: 켜짐)이 켜져 있으면, 충격으로 잠긴 영상은
+녹화가 끝나는 즉시 갤러리의 `DashStamp` 앨범에 **자동으로 복사**됩니다. 앱
+내부의 영상은 앱과 함께 지워지므로, 사고 순간 영상만큼은 앱 밖에 남기기
+위해서입니다. 복사된 뒤에는 앱 안의 사본이 잠금에서 풀려 평소처럼 오래되면
+덮어쓰입니다 — 같은 영상을 두 벌 보관하지 않기 위해서입니다. 이 복사는 기기
+안에서만 일어나며 어디로도 전송되지 않습니다. 설정에서 끌 수 있습니다.
+
+*With **Impact clips to gallery** on (the default), a clip locked by an impact
+is copied to the `DashStamp` album as soon as it finishes. Clips inside the app
+go when the app does, and an incident is the one thing worth keeping outside
+it. Once copied, the app's own copy is unlocked and ages out like any other,
+so the same footage is not held twice. The copy happens on the device and is
+not sent anywhere. It can be turned off in settings.*
 
 ### 덮어쓰기 / Overwriting
 
@@ -197,10 +212,11 @@ is recovered rather than thrown away.*
 ### 삭제 / Deleting
 
 앱을 삭제하면 **앱 내부에 있던 블랙박스 영상도 함께 삭제됩니다.**
-갤러리로 내보내신 영상은 남습니다.
+갤러리로 내보내신 영상과, 갤러리에 자동 복사된 충격 영상은 남습니다.
 
 *Uninstalling removes the blackbox clips held inside the app. Anything you
-exported to the gallery stays.*
+exported to the gallery stays, and so do impact clips copied there
+automatically.*
 
 ---
 
