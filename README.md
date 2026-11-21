@@ -1,20 +1,23 @@
-# DashStamp — 개인정보처리방침 / Privacy Policy
+# DashStamp — 개인정보처리방침·이용약관 / Privacy Policy & Terms
 
-DashStamp 안드로이드 앱의 개인정보처리방침을 게시하는 저장소입니다.
+DashStamp 안드로이드 앱의 개인정보처리방침과 서비스 이용약관을 게시하는 저장소입니다.
 앱 소스 코드는 들어 있지 않습니다.
 
-*This repository publishes the privacy policy for the DashStamp Android app.
+*This repository publishes the privacy policy and terms of service for the DashStamp Android app.
 It contains no application source code.*
 
 ## 게시된 문서 / Published
 
 - **[개인정보처리방침 / Privacy Policy](privacy-policy.html)**
+- **[서비스 이용약관 / Terms of Service](terms-of-service.html)**
 
 | 파일 | 내용 |
 |---|---|
 | `privacy-policy.html` | 게시되는 페이지. Play Console에 넣는 주소 |
 | `privacy-policy.md` | 같은 내용의 원본 마크다운 |
-| `index.html` | 방침으로 가는 표지 |
+| `terms-of-service.html` | 이용약관 페이지 |
+| `terms-of-service.md` | 같은 내용의 원본 마크다운 |
+| `index.html` | 두 문서로 가는 표지 |
 | `.nojekyll` | GitHub Pages가 파일을 그대로 서빙하게 함 |
 
 ## 설정 / Setup
@@ -24,7 +27,7 @@ GitHub Pages: **Settings → Pages → Deploy from a branch → `master` / `/ (r
 ## 갱신 / Updating
 
 이 저장소의 파일은 **직접 편집하지 마세요.** 원본은 비공개 앱 저장소의
-`docs/privacy-policy.md` 이고, 거기서 다음 명령으로 복사됩니다.
+`docs/privacy-policy.md`, `docs/terms-of-service.md` 이고, 거기서 다음 명령으로 복사됩니다.
 
 ```
 node scripts/export-policy.js ../dashstamp-policy
